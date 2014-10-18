@@ -1,7 +1,7 @@
 KBEngine_unity3d_demo
 =============
 
-##Homepage
+##This client-project is written for kbengine(a MMOG engine of server)
 http://www.kbengine.org
 
 
@@ -11,8 +11,18 @@ http://www.kbengine.org
 
 
 ##Build:
+		1: Use git to update the KBE plugin(https://github.com/kbengine/kbengine_unity3d_plugins):
+			In the kbengine_unity3d_** directory:
+			* Git command: git submodule update --init
+			* Or use TortoiseGit(menu): TortoiseGit -> Submodule Update:
+![submodule_update](http://www.kbengine.org/assets/img/screenshots/unity3d_plugins_submodule_update.jpg)
 
-		Unity Editor -> File -> Build Settings -> PC, MAC & Linux Standalone.
+		2: Or manually update the plugin
+			git clone https://github.com/kbengine/kbengine_unity3d_plugins.git
+			clone to Assets/plugins/kbengine/kbengine_unity3d_plugins
+
+		3: Build:
+			Unity Editor -> File -> Build Settings -> PC, MAC & Linux Standalone.
 
 
 ##Start the servers:
